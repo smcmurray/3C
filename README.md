@@ -33,7 +33,7 @@ The bank validates the Warrant and returns a digital receipt that can be used to
   -   Transaction number
   -   Original Warrant of Payment
 
-The payee can redeem the receipt for payment by presenting it to the bank with the decrypted transaction number. The signature of the Ammended Warrant of Payment can validated against the bank's public key, retrieved from bank's domain name. This gives the payee confidence that the receipt was issued by the bank in question. It also gives the bank confidence that the payee is authorized to redeem the receipt.
+The payee can redeem the receipt for payment by presenting it to the bank with the decrypted transaction number. The signature of the Ammended Warrant of Payment can be validated against the bank's public key. This gives the payee confidence that the receipt was issued by the bank in question. It also gives the bank confidence that the payee is authorized to redeem the receipt.
 
 ##Transaction Examples
 
