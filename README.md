@@ -29,14 +29,22 @@ When a Warrant of Payment is presented to the bank, the bank can use the public 
 The bank validates the Warrant and returns a digital receipt that can be used to redeem the Warrant. The receipt contains the following data:
 
 - Domain name of the bank
-- Amended Warrant of Payment encrypted with the bank's private key and containing the following:
-  -   Transaction number encrypted with public key of payee as found in the Warrant of Payment
+- Amended Warrant of Payment signed with the bank's private key then encrypted with the payee's public key. It contains the following:
+  -   Transaction number
   -   Original Warrant of Payment
 
-The payee can redeem the receipt for payment by presenting it to the bank with the decrypted transaction number. The Ammended Warrant of Payment can be decrypted by retrieving the bank's public key from their domain. The transaction number is decrypted with the payee's private key. This gives the payee confidence that the receipt was issued by the bank in question. It also gives the bank confidence that the payee is authorized to redeem the receipt.
+The payee can redeem the receipt for payment by presenting it to the bank with the decrypted transaction number. The signature of the Ammended Warrant of Payment can validated against the bank's public key, retrieved from bank's domain name. This gives the payee confidence that the receipt was issued by the bank in question. It also gives the bank confidence that the payee is authorized to redeem the receipt.
 
 ##Transaction Examples
 
 ### Alice at the Carwash
 
-Alice drives into her favorite carwash and pulls up to the automated teller. She chooses the options she desires and the teller displays a QR code. Alice points her phone at the QR code and presses the button. Her phone asks her if she wishes to pay the carwash $12, and she answers yes and types in her password. Her phone then displays its own QR code which she shows to the teller and presses the teller's Confirm button. The teller validates the payment and engages the carwash.
+Alice drives into her favorite carwash and pulls up to the automated teller. She chooses the options she desires and the teller displays a QR code.
+
+![Offer QR code](examples/offer.png)
+
+Alice points her phone at the QR code and presses the button. Her phone asks her if she wishes to pay the carwash $12, and she answers yes then types in her password. Her phone then displays its own QR code.
+
+![Receipt QR code](examples/receipt.png)
+
+Alice shows this code to the teller and presses the teller's Confirm button. The teller verifies the payment and engages the carwash.
