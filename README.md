@@ -2,7 +2,7 @@
 
 Consumer Controlled Credit transactions allow consumers to participate in credit transactions without exposing any information to a third party that could be used to harm the consumer. This includes credit card credentials, pins, or any other information that can be used to create credit transactions without the consumer's knowledge.
 
-3C transactions can be used to replace current magstrip and chip-and-pin credit and debit cards. They can be used for online transactions without inviting phishing attacks. In printed form, they can replace paper checks with better security and can be used as self-issued traveler's cheques with the same accptance as debit cards. They could be printed by ATMs, reducing the need for ATMs to store cash. They could also be redeemed at ATMs.
+3C transactions can be used to replace current magstrip and chip-and-pin credit and debit cards. They can be used for online transactions without inviting phishing attacks. In printed form, they can replace paper checks with better security and can be used as self-issued traveler's cheques with the same acceptance as debit cards. They could be printed by ATMs, reducing the need for ATMs to store cash. They could also be redeemed at ATMs.
 
 ##How it works
 
