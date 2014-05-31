@@ -17,7 +17,7 @@ A Warrant of Payment is simply an instruction to the consumer's bank to release 
 - Account number
 - Amount of money
 - Currency
-- Redeemable timestamp
+- Timestamp
 - Name of payee
 - Public key of payee
 - Digital signature (created using consumer's private key)
@@ -39,12 +39,12 @@ The payee can redeem the receipt for payment by presenting it to the bank with t
 
 ### Alice at the Carwash
 
-Alice drives into her favorite carwash and pulls up to the automated teller. She chooses the options she desires and the teller displays a QR code.
+Alice drives into her favorite carwash and pulls up to the automated teller. She chooses the options she desires and the teller displays a QR code:
 
 ![Offer QR code](examples/offer.png)
 
-Alice points her phone at the QR code and presses the button. Her phone asks her if she wishes to pay the carwash $12, and she answers yes then types in her password. Her phone then displays its own QR code.
+Alice points her phone at the QR code and presses the button. Her phone asks her if she wishes to pay the carwash $12, and she answers yes then types in her password. Her phone then displays its own QR code:
 
-![Receipt QR code](examples/receipt.png)
+![Warrant QR code](examples/warrant.png)
 
-Alice shows this code to the teller and presses the teller's Confirm button. The teller verifies the payment and engages the carwash.
+Alice shows this code to the teller and presses the teller's Confirm button. The teller submits the warrant and receives a receipt. Having verified payment, the teller engages the carwash.
